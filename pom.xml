@@ -13,9 +13,9 @@
 	<name>ForexPay</name>
 	<description>Money Transfer project for Spring Boot</description>
 <scm>
-       <connection>scm:https://github.com/samridhi97/ForexPay.git</connection>
-       <url>https://github.com/samridhi97/ForexPay.git</url>
-       <developerConnection>scm:git:https://github.com/samridhi97/ForexPay.git</developerConnection>
+       <connection>scm:https://github.com/sagar20500707/ForexPay-1.git</connection>
+       <url>https://github.com/sagar20500707/ForexPay-1.git</url>
+       <developerConnection>scm:https://github.com/sagar20500707/ForexPay-1.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -28,7 +28,7 @@
 			**/constant/*,
 			**/exception/*
 		</sonar.coverage.exclusions>
-           <sonar.host.url>http://13.234.31.39:9000</sonar.host.url>
+           <sonar.host.url>http://13.232.181.148:9000</sonar.host.url>
            <sonar.login>admin</sonar.login>
            <sonar.password>admin</sonar.password>	
 	</properties>
@@ -81,10 +81,14 @@
 		</dependency>
 	</dependencies>
 	<distributionManagement>
-	  <snapshotRepository>
-	    <id>nexus</id>
-	    <url>http://13.232.181.148:8081/repository/maven-snapshots/</url>
-	  </snapshotRepository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://13.232.181.148:8081/nexus/content/repositories/Snapshots/</url>
+		</snapshotRepository>
+		<repository>
+             <id>nexus</id>
+             <url>http://13.232.181.148:8081/nexus/content/repositories/Releases/</url>
+       	     </repository>
 	</distributionManagement>
 
 	<build>
