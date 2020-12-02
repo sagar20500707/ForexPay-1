@@ -87,7 +87,7 @@
 		</snapshotRepository>
 		<repository>
              <id>nexus</id>
-             <url>http://13.232.181.148:8081/nexus/content/repositories/ForexPay Releases</url>
+             <url>http://65.0.94.105:8081/nexus/content/repositories/releases</url>
        	     </repository>
 	</distributionManagement>
 
